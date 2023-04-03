@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+}
+
+.left span {
+  display: flex;
+  position: relative;
+  /* it must be relative to move the child within the parent */
+  background-color: orange;
+  align-items: center;
+  left: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transform: translateX(-60%);
+}
+
+.left span:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.right span {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+span {
+  text-decoration: none;
+}
+
+.right span:hover {
+  height: 40px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: aliceblue;
+  cursor: pointer;
+}
